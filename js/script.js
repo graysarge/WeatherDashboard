@@ -16,9 +16,11 @@ function initPage() {
     
 
     const APIKey = "c9a9ed03a355403f4cb9a36e931c0b4a";
+    
 //  When search button is clicked, read the city name typed by the user
 
     function getWeather(cityName) {
+
 //  Using saved city name, execute a current condition get request from open weather map api
 
         let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
@@ -127,6 +129,7 @@ function initPage() {
 
 
 //  Save user's search requests and display them underneath search form
+
 //  When page loads, automatically generate current conditions and 5-day forecast for the last city the user searched for
 
 }
