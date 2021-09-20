@@ -18,12 +18,14 @@ function initPage() {
 
     function getWeather(cityName) {
 //  Using saved city name, execute a current condition get request from open weather map api
+
         let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
         axios.get(queryURL)
         .then(function(response){
             console.log(response);
-//  Parse response to display current conditions
-        //  Method for using "date" objects obtained from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+            
+//  Display current conditions
+
             const currentDate = new Date(response.data.dt*1000);
             console.log(currentDate);
             const day = currentDate.getDate();
