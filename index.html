@@ -1,6 +1,7 @@
 <!-- Begin HTML !-->
 <!DOCTYPE html>
 <html lang="en">
+
 <!-- Head !-->
 <head>
     <meta charset="UTF-8">
@@ -12,11 +13,13 @@
     <title>Weather Dashboard</title>
 </head>
 <!-- End Head !-->
+
 <!-- Begin Body !-->
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashboard</span>
     </nav>
+
 <!-- Input City !-->
     <div class="container">
         <div class="row">
@@ -33,6 +36,7 @@
                 <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
                 <form id="history"></form>
             </div>
+
 <!-- City Weather Info !-->
             <div class="col-8">
                 <div class="row mr-0">
@@ -43,21 +47,25 @@
                                 <img id="current-pic" src="placeholder" alt="">
                             </div>
                         </div>
+                        <!-- temperature !-->
                         <div class="row">
                             <div class="col-12">
                                 <p id="temperature"></p>
                             </div>
                         </div>
+                        <!-- humidity !-->
                         <div class="row">
                             <div class="col-12">
                                 <p id="humidity"></p>
                             </div>
                         </div>
+                        <!-- wind speed !-->
                         <div class="row">
                             <div class="col-12">
                                 <p id="wind-speed"></p>
                             </div>
                         </div>
+                        <!-- UV index !-->
                         <div class="row">
                             <div class="col-12 d-flex">
                                 <p id="UV-index"></p>
@@ -65,11 +73,13 @@
                         </div>
                     </div>
                 </div>
+                <!-- 5 day forcast !-->
                 <div class="row">
                     <div class="col-12">
                         <h3>5-Day Forecast</h3>
                     </div>
                 </div>
+                <!-- display forcast !-->
                 <div class="row">
                     <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
                     <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
@@ -86,5 +96,6 @@
     <script src="java\script.js"></script>
 </body>
 <!-- End Body !-->
+
 </html>
 <!-- End HTML !-->
